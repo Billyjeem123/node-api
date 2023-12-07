@@ -1,0 +1,5 @@
+config folder:: Databse connection
+controller::This is where the application logic takes place
+middleware:: Grouping middleware
+model:: Contains modes e.g db tables
+utils: Helper functions  in js
