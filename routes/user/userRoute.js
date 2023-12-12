@@ -1,17 +1,10 @@
 const express =  require('express');
 const userRouter = new express.Router();
+const {UserCntrol} = require("../../controller/userCtrol/user")
 
 
 
-userRouter.post(`/register`, async (req, res) => {
-  
-  try {
-    res.status(201).json({ message: 'Registration successful' });
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'Internal Server Error' });
-  }
-});
+userRouter.post(`/register`, UserCntrol);
 
 
   module.exports = userRouter;
